@@ -1,0 +1,54 @@
+
+
+  body{
+  margin: 8
+  }
+  /* a 태크는 inline element
+  */
+  a {
+    color: black;
+    text-underline-position: below: blue;
+  }
+  .saw {
+    color:gray;
+  }
+  #active {
+    color: lightblue;
+  }
+
+  /*
+  hi 태그는 block lable element
+  */
+  h1 {
+    font-size: 45px; text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+  }
+
+   ol{
+    border-right: 1px solid gray;
+    width: 130px;
+    margin: 0;
+    padding: 20px;
+    padding-left: 33px;
+    font-size: 20px;
+  }
+  #grid{
+      display: grid;
+      grid-template-columns: 200px 4fr;
+    }
+  #gird #article{
+      padding-left: 5px
+  }
+  @media(max-width: 800px) {
+    #grid{
+        display: block;
+      }
+      ol{
+          border-right: none;
+      }
+      h1 {
+    border-bottom: none;
+      }
+  }
